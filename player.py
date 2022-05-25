@@ -18,3 +18,8 @@ class Player():
     
     def addItem(self, item):
         self.items.update({item:{}})
+
+def creatNewPlayer():
+    None
+    #Add input output logic here then create the player add the other functions here 
+    #Include the actual options below then move the functions to their own file 
