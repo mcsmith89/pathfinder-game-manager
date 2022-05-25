@@ -1,6 +1,4 @@
-from glob import glob
 from printy import printy, inputy
-from regex import F
 
 #create the player and associated details 
 
@@ -32,6 +30,9 @@ def creatNewPlayer():
 
     print(vars(globals()[(str(first_name[0])+str(last_name))]))
     return globals()[(str(first_name[0])+str(last_name))]
+
+def updatePlayer():
+    None    
 
     # str(first_name[0]) + str(last_name) = Player(first_name=first_name, last_name=last_name, email=email) #how do we pass this? <<<-------
 
