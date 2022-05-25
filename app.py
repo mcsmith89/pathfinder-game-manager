@@ -7,6 +7,6 @@ def creatNewPlayer():
 
 
 #Just testing it worked 
-mike = Player("Mike", "Smith", "mcsmith1989@gmail.com")
+mike = Player("Mike", "Smith", "test@testemail.com")
 
 print(vars(mike))
