@@ -31,8 +31,18 @@ def creatNewPlayer():
     print(vars(globals()[(str(first_name[0])+str(last_name))]))
     return globals()[(str(first_name[0])+str(last_name))]
 
-def updatePlayer():
-    None    
+def updatePlayer(playerList):
+    counter = 0 
+    printy("[n]Which player would you like to update?")
+    for x in playerList:
+        counter += 1
+        print(f"{counter}. {x.first_name} {x.last_name}")
+        playerSelection = inputy("[n]Please select an option ", type="int")
+        if playerSelection > len(playerList):
+            print("This is not an available option")
+        else:
+            print(f"You are editing player {vars(playerList[playerSelection -1])}")
+            #INSERT LOGIC TO EDIT PLAYER HERE 
 
     # str(first_name[0]) + str(last_name) = Player(first_name=first_name, last_name=last_name, email=email) #how do we pass this? <<<-------
 

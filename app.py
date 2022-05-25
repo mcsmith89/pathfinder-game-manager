@@ -1,4 +1,4 @@
-from player import Player, creatNewPlayer
+from player import Player, creatNewPlayer, updatePlayer
 from printy import printy, inputy
 
 #___________________________
@@ -27,6 +27,8 @@ else:
     printy(f"[n]You have chosen: {userOptions[beginningChoice-1]}")
     if beginningChoice == 1:
         players.append(creatNewPlayer())
+    if beginningChoice == 2:
+        updatePlayer(players)
 
 for x in players:
     print(vars(x))
