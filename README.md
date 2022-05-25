@@ -1,0 +1,1 @@
+This is a tool to spin up and manage your own pathfinder/D&D adventure. Will evolve over time. 
